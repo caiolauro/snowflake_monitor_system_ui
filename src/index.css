@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* src/App.css */
+
+
+.moisture-app {
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+}
+
+main {
+  padding: 2rem;
+}
+
+.moisture-info {
+  background-color: #ffffff;
+  border: 1px solid rgb(221, 221, 221)515;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+h1, h2 {
+  color: #333;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #4CAF50; /* Green color for moisture percentage */
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}

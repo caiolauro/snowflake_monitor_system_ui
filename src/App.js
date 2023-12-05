@@ -29,7 +29,7 @@ const MoistureApp = () => {
       </header>
       <main>
         {moistureData ? (
-          <div className=".moisture-info">
+          <div className="moisture-info">
             <h2>Current Moisture Level</h2>
             <p>{moistureData}%</p>
             {/* You can add more details or visualizations here */}
