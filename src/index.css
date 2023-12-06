@@ -14,7 +14,7 @@ code {
 /* src/App.css */
 
 
-.moisture-app {
+.appliances-app {
   text-align: center;
 }
 
@@ -28,7 +28,7 @@ main {
   padding: 2rem;
 }
 
-.moisture-info {
+.appliances-info {
   background-color: #ffffff;
   border: 1px solid rgb(221, 221, 221)515;
   border-radius: 8px;
@@ -42,7 +42,7 @@ h1, h2 {
 
 p {
   font-size: 1.5rem;
-  color: #4CAF50; /* Green color for moisture percentage */
+  color: #4CAF50; /* Green color for appliances percentage */
 }
 
 footer {

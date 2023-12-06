@@ -1,41 +1,42 @@
 import React, { useState, useEffect } from 'react';
 
-const MoistureApp = () => {
-  // Assuming you have an API endpoint to fetch moisture data
-  const apiEndpoint = 'https://random-data-api.com/api/v2/credit_cards';
+const AppliancesApp = () => {
+  // Assuming you have an API endpoint to fetch appliances data
+  const apiEndpoint = 'https://random-data-api.com/api/v2/appliances';
 
-  const [moistureData, setMoistureData] = useState(null);
+  const [appliancesData, setAppliancesData] = useState(null);
 
   useEffect(() => {
-    // Fetch moisture data from the API
-    const fetchMoistureData = async () => {
+    // Fetch appliances data from the API
+    const fetchAppliancesData = async () => {
       try {
         const response = await fetch(apiEndpoint);
         const data = await response.json();
-        console.log(data)
-        setMoistureData(data.credit_card_number);
+        setAppliancesData(data);
       } catch (error) {
-        console.error('Error fetching moisture data:', error);
+        console.error('Error fetching appliances data:', error);
       }
     };
 
-    fetchMoistureData();
+    fetchAppliancesData();
   }, []);
 
   return (
-    <div className="moisture-app">
+    <div className="appliances-app">
       <header>
-        <h1>Moisture Dashboard</h1>
+        <h1>Appliances</h1>
       </header>
       <main>
-        {moistureData ? (
-          <div className="moisture-info">
-            <h2>Current Moisture Level</h2>
-            <p>{moistureData}%</p>
+        {appliancesData ? (
+          <div className="appliances-info">
+            <h2>Brand</h2>
+            <p>{appliancesData.brand}</p>
+            <h2>Appliance</h2>
+            <p>{appliancesData.equipment}</p>
             {/* You can add more details or visualizations here */}
           </div>
         ) : (
-          <p>Loading moisture data...</p>
+          <p>Loading appliances data...</p>
         )}
       </main>
       <footer>
@@ -45,4 +46,4 @@ const MoistureApp = () => {
   );
 };
 
-export default MoistureApp;
+export default AppliancesApp;
