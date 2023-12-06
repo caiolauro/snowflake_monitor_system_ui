@@ -1,53 +1,53 @@
+/* Styling for the form container */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: url('https://www.snowflake.com/wp-content/uploads/2021/06/snowflake-summit-2021-PR-image-768x432.png') ;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-/* src/App.css */
-
-
-.appliances-app {
-  text-align: center;
-}
-
-header {
-  background-color: #333;
-  padding: 1rem;
-  color: white;
-}
-
-main {
-  padding: 2rem;
-}
-
-.appliances-info {
-  background-color: #ffffff;
-  border: 1px solid rgb(221, 221, 221)515;
+form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Apercu Mono Pro', sans-serif;         
+  font-size: 18px;
+  background-color: #f4f4f4;
   border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+/* Styling for form labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
   color: #333;
 }
 
-p {
-  font-size: 1.5rem;
-  color: #4CAF50; /* Green color for appliances percentage */
+/* Styling for form inputs and textarea */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-footer {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: #333;
+/* Styling for the checkbox */
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Styling for the submit button */
+button {
+  background-color: #007bff;
   color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+button:hover {
+  background-color: #0056b3;
 }
